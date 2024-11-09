@@ -1,0 +1,160 @@
+<?xml version="1.0"?>
+<robot name="excavator">
+
+  <!-- 본체 링크 (body) -->
+  <link name="body">
+    <visual>
+      <geometry>
+        <box size="2 1 1"/> <!-- 본체 크기 -->
+      </geometry>
+      <material name="yellow">
+        <color rgba="1 1 0 1"/> <!-- 노란색 -->
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <box size="2 1 1"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="5.0"/>
+      <inertia ixx="0.5" ixy="0.0" ixz="0.0" iyy="0.5" iyz="0.0" izz="0.5"/>
+    </inertial>
+  </link>
+
+  <!-- 팔 첫 번째 링크 (arm_link1) -->
+  <link name="arm_link1">
+    <visual>
+      <geometry>
+        <box size="1.5 0.2 0.2"/>
+      </geometry>
+      <material name="dark_gray">
+        <color rgba="0.3 0.3 0.3 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <box size="1.5 0.2 0.2"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="2.0"/>
+      <inertia ixx="0.1" ixy="0.0" ixz="0.0" iyy="0.1" iyz="0.0" izz="0.1"/>
+    </inertial>
+  </link>
+
+  <!-- 팔 두 번째 링크 (arm_link2) -->
+  <link name="arm_link2">
+    <visual>
+      <geometry>
+        <box size="1.2 0.2 0.2"/>
+      </geometry>
+      <material name="dark_gray">
+        <color rgba="0.3 0.3 0.3 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <box size="1.2 0.2 0.2"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="1.5"/>
+      <inertia ixx="0.05" ixy="0.0" ixz="0.0" iyy="0.05" iyz="0.0" izz="0.05"/>
+    </inertial>
+  </link>
+
+  <!-- 버킷 링크 (bucket) -->
+  <link name="bucket">
+    <visual>
+      <geometry>
+        <box size="0.5 0.3 0.2"/>
+      </geometry>
+      <material name="brown">
+        <color rgba="0.6 0.3 0.2 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <box size="0.5 0.3 0.2"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="1.0"/>
+      <inertia ixx="0.02" ixy="0.0" ixz="0.0" iyy="0.02" iyz="0.0" izz="0.02"/>
+    </inertial>
+  </link>
+
+  <!-- 조인트 설정 -->
+
+  <!-- 본체와 첫 번째 팔 연결 -->
+  <joint name="body_to_arm1" type="revolute">
+    <parent link="body"/>
+    <child link="arm_link1"/>
+    <origin xyz="1 0 0.5" rpy="0 0 0"/>
+    <axis xyz="0 1 0"/> <!-- 팔이 위아래로 회전 -->
+    <limit lower="-1.57" upper="1.57" effort="10.0" velocity="1.0"/>
+  </joint>
+
+  <!-- 첫 번째 팔과 두 번째 팔 연결 -->
+  <joint name="arm1_to_arm2" type="revolute">
+    <parent link="arm_link1"/>
+    <child link="arm_link2"/>
+    <origin xyz="0.75 0 0" rpy="0 0 0"/>
+    <axis xyz="0 1 0"/>
+    <limit lower="-1.0" upper="1.5" effort="10.0" velocity="1.0"/>
+  </joint>
+
+  <!-- 두 번째 팔과 버킷 연결 -->
+  <joint name="arm2_to_bucket" type="revolute">
+    <parent link="arm_link2"/>
+    <child link="bucket"/>
+    <origin xyz="0.6 0 0" rpy="0 0 0"/>
+    <axis xyz="0 1 0"/>
+    <limit lower="-1.0" upper="1.0" effort="10.0" velocity="1.0"/>
+  </joint>
+  
+  
+
+  <!-- Transmission Interface -->
+  <transmission name="body_to_arm1_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="body_to_arm1">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="arm1_motor">
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+  <transmission name="arm1_to_arm2_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="arm1_to_arm2">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="arm2_motor">
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+  <transmission name="arm2_to_bucket_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="arm2_to_bucket">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="bucket_motor">
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+
+
+  <!-- Gazebo ROS 2 Control Plugin -->
+  <gazebo>
+    <plugin name="gazebo_ros2_control" filename="libgazebo_ros2_control.so">
+      <robot_namespace>/excavator</robot_namespace>
+      <robot_param>robot_description</robot_param>
+    </plugin>
+  </gazebo>
+
+</robot>
