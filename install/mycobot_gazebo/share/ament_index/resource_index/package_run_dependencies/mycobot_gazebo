@@ -1,0 +1,1 @@
+controller_manager;gazebo_ros;gazebo_ros2_control;gazebo_ros_pkgs;gripper_controllers;rclcpp;ros_gz;ros_gz_bridge;ros_gz_sim;ros_gz_image;ros2_control;ros2_controllers;trajectory_msgs;xacro;ament_lint_auto;ament_lint_common

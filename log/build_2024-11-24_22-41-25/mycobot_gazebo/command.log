@@ -1,0 +1,4 @@
+Invoking command in '/home/pbs/ros2_ws/build/mycobot_gazebo': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/pbs/ros2_ws/build/mycobot_gazebo -- -j12 -l12
+Invoked command in '/home/pbs/ros2_ws/build/mycobot_gazebo' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/pbs/ros2_ws/build/mycobot_gazebo -- -j12 -l12
+Invoking command in '/home/pbs/ros2_ws/build/mycobot_gazebo': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/pbs/ros2_ws/build/mycobot_gazebo
+Invoked command in '/home/pbs/ros2_ws/build/mycobot_gazebo' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/pbs/ros2_ws/build/mycobot_gazebo

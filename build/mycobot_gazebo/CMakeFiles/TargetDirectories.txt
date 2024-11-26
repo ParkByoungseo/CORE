@@ -1,0 +1,12 @@
+/home/pbs/ros2_ws/build/mycobot_gazebo/CMakeFiles/uninstall.dir
+/home/pbs/ros2_ws/build/mycobot_gazebo/CMakeFiles/mycobot_gazebo_uninstall.dir
+/home/pbs/ros2_ws/build/mycobot_gazebo/CMakeFiles/example_joint_trajectory_publisher_cpp.dir
+/home/pbs/ros2_ws/build/mycobot_gazebo/CMakeFiles/ament_cmake_python_copy_mycobot_gazebo.dir
+/home/pbs/ros2_ws/build/mycobot_gazebo/CMakeFiles/ament_cmake_python_build_mycobot_gazebo_egg.dir
+/home/pbs/ros2_ws/build/mycobot_gazebo/CMakeFiles/test.dir
+/home/pbs/ros2_ws/build/mycobot_gazebo/CMakeFiles/edit_cache.dir
+/home/pbs/ros2_ws/build/mycobot_gazebo/CMakeFiles/rebuild_cache.dir
+/home/pbs/ros2_ws/build/mycobot_gazebo/CMakeFiles/list_install_components.dir
+/home/pbs/ros2_ws/build/mycobot_gazebo/CMakeFiles/install.dir
+/home/pbs/ros2_ws/build/mycobot_gazebo/CMakeFiles/install/local.dir
+/home/pbs/ros2_ws/build/mycobot_gazebo/CMakeFiles/install/strip.dir

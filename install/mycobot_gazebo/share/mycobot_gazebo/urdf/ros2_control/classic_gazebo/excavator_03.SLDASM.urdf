@@ -1,0 +1,634 @@
+<?xml version="1.0" encoding="utf-8"?>
+<robot
+  name="excavator_03.SLDASM">
+
+   <!-- Add Gazebo ros2_control plugin here -->
+  <gazebo>
+    <plugin filename="libgazebo_ros2_control.so" name="gazebo_ros2_control">
+      <robot_param>robot_description</robot_param>
+      <robot_param_node>robot_state_publisher</robot_param_node>
+      <parameters>$(find mycobot_gazebo)/config/excavator_controllers.yaml</parameters>
+    </plugin>
+  </gazebo>
+
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.0176394134348032 -2.22044604925031E-16 0.223393094305927"
+        rpy="0 0 0" />
+      <mass
+        value="2977.95974309184" />
+      <inertia
+        ixx="1276.12617007638"
+        ixy="-0.00023663061182333"
+        ixz="24.4034518650965"
+        iyy="2010.57224189183"
+        iyz="1.25333356742187E-14"
+        izz="3160.89364460489" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file://$(find mycobot_gazebo)/urdf/ros2_control/classic_gazebo/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file://$(find mycobot_gazebo)/urdf/ros2_control/classic_gazebo/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="FR_wheel_link">
+    <inertial>
+      <origin
+        xyz="1.06581410364015E-14 7.99360577730113E-15 -0.76097530865572"
+        rpy="0 0 0" />
+      <mass
+        value="235.619449019234" />
+      <inertia
+        ixx="14.9225651045515"
+        ixy="8.88178419700125E-16"
+        ixz="-7.59392548843607E-14"
+        iyy="14.9225651045515"
+        iyz="-5.59552404411079E-14"
+        izz="20.0276531666349" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file://$(find mycobot_gazebo)/urdf/ros2_control/classic_gazebo/meshes/FR_wheel_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.333333333333333 0.333333333333333 0.333333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file://$(find mycobot_gazebo)/urdf/ros2_control/classic_gazebo/meshes/FR_wheel_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="FR_wheel_joint"
+    type="revolute">
+    <origin
+      xyz="1.4 -0.236524691344278 -0.0250000000000013"
+      rpy="-1.57079632679487 -1.21081594575034 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="FR_wheel_link" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="10"
+      velocity="0.5" />
+  </joint>
+  <link
+    name="FL_wheel_link">
+    <inertial>
+      <origin
+        xyz="-9.76996261670138E-15 -2.04281036531029E-14 0.810346676302963"
+        rpy="0 0 0" />
+      <mass
+        value="235.619449019234" />
+      <inertia
+        ixx="14.9225651045515"
+        ixy="1.33226762955019E-15"
+        ixz="-5.99520433297585E-14"
+        iyy="14.9225651045515"
+        iyz="-1.29674049276218E-13"
+        izz="20.0276531666349" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file://$(find mycobot_gazebo)/urdf/ros2_control/classic_gazebo/meshes/FL_wheel_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.333333333333333 0.333333333333333 0.333333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file://$(find mycobot_gazebo)/urdf/ros2_control/classic_gazebo/meshes/FL_wheel_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="FL_wheel_joint"
+    type="revolute">
+    <origin
+      xyz="1.4 0.187153323697037 -0.0249999999999993"
+      rpy="-1.57079632679491 -0.737979962623443 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="FL_wheel_link" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="10"
+      velocity="0.5" />
+  </joint>
+  <link
+    name="BR_wheel_link">
+    <inertial>
+      <origin
+        xyz="-8.43769498715119E-15 1.4432899320127E-15 -0.786060508297315"
+        rpy="0 0 0" />
+      <mass
+        value="235.619449019234" />
+      <inertia
+        ixx="14.9225651045515"
+        ixy="1.77635683940025E-15"
+        ixz="5.6399329650958E-14"
+        iyy="14.9225651045515"
+        iyz="-1.08801856413265E-14"
+        izz="20.0276531666349" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file://$(find mycobot_gazebo)/urdf/ros2_control/classic_gazebo/meshes/BR_wheel_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.333333333333333 0.333333333333333 0.333333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file://$(find mycobot_gazebo)/urdf/ros2_control/classic_gazebo/meshes/BR_wheel_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="BR_wheel_joint"
+    type="revolute">
+    <origin
+      xyz="-1.4 -0.211439491702686 -0.0250000000000012"
+      rpy="1.5707963267949 -0.486234667575469 3.14159265358978" />
+    <parent
+      link="base_link" />
+    <child
+      link="BR_wheel_link" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="10"
+      velocity="0.5" />
+  </joint>
+  <link
+    name="BL_wheel_link">
+    <inertial>
+      <origin
+        xyz="1.99840144432528E-15 7.32747196252603E-15 0.80721715568749"
+        rpy="0 0 0" />
+      <mass
+        value="235.619449019234" />
+      <inertia
+        ixx="14.9225651045515"
+        ixy="0"
+        ixz="1.4210854715202E-14"
+        iyy="14.9225651045515"
+        iyz="4.52970994047064E-14"
+        izz="20.0276531666349" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file://$(find mycobot_gazebo)/urdf/ros2_control/classic_gazebo/meshes/BL_wheel_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.333333333333333 0.333333333333333 0.333333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file://$(find mycobot_gazebo)/urdf/ros2_control/classic_gazebo/meshes/BL_wheel_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="BL_wheel_joint"
+    type="revolute">
+    <origin
+      xyz="-1.4 0.19028284431251 -0.0249999999999993"
+      rpy="-1.57079632679489 -0.901244854643899 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="BL_wheel_link" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="10"
+      velocity="0.5" />
+  </joint>
+  <link
+    name="upper_structure_link">
+    <inertial>
+      <origin
+        xyz="-0.495628171385806 0.199231627180777 0.507919121385117"
+        rpy="0 0 0" />
+      <mass
+        value="6481.92731251916" />
+      <inertia
+        ixx="3995.91515775081"
+        ixy="-1380.76403779697"
+        ixz="-667.093108887211"
+        iyy="7052.09739515952"
+        iyz="-527.647337085614"
+        izz="9333.21578790062" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file://$(find mycobot_gazebo)/urdf/ros2_control/classic_gazebo/meshes/upper_structure_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file://$(find mycobot_gazebo)/urdf/ros2_control/classic_gazebo/meshes/upper_structure_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="upper_structure_joint"
+    type="revolute">
+    <origin
+      xyz="-0.280000000000001 0 0.57"
+      rpy="0 0 0.0645666552236237" />
+    <parent
+      link="base_link" />
+    <child
+      link="upper_structure_link" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="10"
+      velocity="0.5" />
+  </joint>
+  <link
+    name="arm_link_1">
+    <inertial>
+      <origin
+        xyz="1.30385919507012 1.67494028826151 -6.44985624700389E-05"
+        rpy="0 0 0" />
+      <mass
+        value="687.454885490208" />
+      <inertia
+        ixx="330.483251699541"
+        ixy="-355.1523551969"
+        ixz="0.0570624481781721"
+        iyy="515.103747246251"
+        iyz="0.0326818043979901"
+        izz="826.227075500151" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file://$(find mycobot_gazebo)/urdf/ros2_control/classic_gazebo/meshes/arm_link_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file://$(find mycobot_gazebo)/urdf/ros2_control/classic_gazebo/meshes/arm_link_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="arm_joint_1"
+    type="revolute">
+    <origin
+      xyz="0.41575847322771 -0.199499999999765 0.501797993289546"
+      rpy="1.5707963267949 0 0" />
+    <parent
+      link="upper_structure_link" />
+    <child
+      link="arm_link_1" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="10"
+      velocity="0.5" />
+  </joint>
+  <link
+    name="arm_link_2">
+    <inertial>
+      <origin
+        xyz="-0.0977328960560095 -0.877040000984263 0.0497820736270529"
+        rpy="0 0 0" />
+      <mass
+        value="343.538558289812" />
+      <inertia
+        ixx="137.01766228365"
+        ixy="7.20856006745739"
+        ixz="-1.19462546095406E-05"
+        iyy="9.52875791066767"
+        iyz="4.86316846619594E-05"
+        izz="141.153966113379" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file://$(find mycobot_gazebo)/urdf/ros2_control/classic_gazebo/meshes/arm_link_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file://$(find mycobot_gazebo)/urdf/ros2_control/classic_gazebo/meshes/arm_link_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="arm_joint_2"
+    type="revolute">
+    <origin
+      xyz="3.48115241901566 2.69101799242997 0.0499467148909045"
+      rpy="-3.14159265358977 0 -2.58347296707543" />
+    <parent
+      link="arm_link_1" />
+    <child
+      link="arm_link_2" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="10"
+      velocity="0.5" />
+  </joint>
+  <link
+    name="terracore_link_1">
+    <inertial>
+      <origin
+        xyz="0.163319368242993 -0.0734336809083698 -0.0466967148909148"
+        rpy="0 0 0" />
+      <mass
+        value="70.6489303229103" />
+      <inertia
+        ixx="2.41917612831426"
+        ixy="-0.113666699504327"
+        ixz="1.34336985979644E-14"
+        iyy="3.36293017702126"
+        iyz="1.11022302462516E-15"
+        izz="2.9227540447987" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file://$(find mycobot_gazebo)/urdf/ros2_control/classic_gazebo/meshes/terracore_link_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file://$(find mycobot_gazebo)/urdf/ros2_control/classic_gazebo/meshes/terracore_link_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="terracore_joint_1"
+    type="revolute">
+    <origin
+      xyz="-0.00732659914483857 -2.69580811750572 0"
+      rpy="-3.14159265358977 0 -2.95088405645385" />
+    <parent
+      link="arm_link_2" />
+    <child
+      link="terracore_link_1" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="10"
+      velocity="0.5" />
+  </joint>
+  <link
+    name="terracore_link_2">
+    <inertial>
+      <origin
+        xyz="-8.0579416561477E-07 0.127815290972917 -6.41948365576184E-08"
+        rpy="0 0 0" />
+      <mass
+        value="14.5393171563633" />
+      <inertia
+        ixx="1.21442921377524"
+        ixy="1.86379944251518E-06"
+        ixz="-3.21005307335476E-08"
+        iyy="0.0740910012945118"
+        iyz="3.85524672012749E-08"
+        izz="1.17157376611303" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file://$(find mycobot_gazebo)/urdf/ros2_control/classic_gazebo/meshes/terracore_link_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file://$(find mycobot_gazebo)/urdf/ros2_control/classic_gazebo/meshes/terracore_link_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="terracore_joint_2"
+    type="prismatic">
+    <origin
+      xyz="0.34 -0.05 -0.046697"
+      rpy="-3.1416 0 -3.1416" />
+    <parent
+      link="terracore_link_1" />
+    <child
+      link="terracore_link_2" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-0.35"
+      upper="0.05"
+      effort="10"
+      velocity="0.5" />
+  </joint>
+  <link
+    name="terracore_link_3">
+    <inertial>
+      <origin
+        xyz="0.0428273785511304 -0.129445543518196 -0.0713558049426748"
+        rpy="0 0 0" />
+      <mass
+        value="27.9646671520689" />
+      <inertia
+        ixx="0.123832790404504"
+        ixy="0.00161840901818255"
+        ixz="0.00248958926004198"
+        iyy="3.13327763134743"
+        iyz="-0.0122120828432704"
+        izz="3.20208095781915" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file://$(find mycobot_gazebo)/urdf/ros2_control/classic_gazebo/meshes/terracore_link_3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 0.964705882352941 0.654901960784314 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file://$(find mycobot_gazebo)/urdf/ros2_control/classic_gazebo/meshes/terracore_link_3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="terracore_joint_3"
+    type="revolute">
+    <origin
+      xyz="0.0499999999999847 -0.282002441572214 0"
+      rpy="-1.57079632679348 -1.53015106159802 1.57079632679343" />
+    <parent
+      link="terracore_link_2" />
+    <child
+      link="terracore_link_3" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="10"
+      velocity="0.5" />
+  </joint>
+</robot>

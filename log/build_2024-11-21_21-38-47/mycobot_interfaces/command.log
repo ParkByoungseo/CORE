@@ -1,0 +1,6 @@
+Invoking command in '/home/pbs/ros2_ws/build/mycobot_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/pbs/ros2_ws/src/mycobot_ros2/mycobot_interfaces -DCMAKE_INSTALL_PREFIX=/home/pbs/ros2_ws/install/mycobot_interfaces
+Invoked command in '/home/pbs/ros2_ws/build/mycobot_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/pbs/ros2_ws/src/mycobot_ros2/mycobot_interfaces -DCMAKE_INSTALL_PREFIX=/home/pbs/ros2_ws/install/mycobot_interfaces
+Invoking command in '/home/pbs/ros2_ws/build/mycobot_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/pbs/ros2_ws/build/mycobot_interfaces -- -j12 -l12
+Invoked command in '/home/pbs/ros2_ws/build/mycobot_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/pbs/ros2_ws/build/mycobot_interfaces -- -j12 -l12
+Invoking command in '/home/pbs/ros2_ws/build/mycobot_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/pbs/ros2_ws/build/mycobot_interfaces
+Invoked command in '/home/pbs/ros2_ws/build/mycobot_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/pbs/ros2_ws/build/mycobot_interfaces

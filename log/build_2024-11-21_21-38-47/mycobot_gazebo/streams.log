@@ -1,0 +1,1105 @@
+[0.015s] Invoking command in '/home/pbs/ros2_ws/build/mycobot_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/pbs/ros2_ws/src/mycobot_ros2/mycobot_gazebo -DCMAKE_INSTALL_PREFIX=/home/pbs/ros2_ws/install/mycobot_gazebo
+[0.070s] -- The C compiler identification is GNU 11.4.0
+[0.132s] -- The CXX compiler identification is GNU 11.4.0
+[0.140s] -- Detecting C compiler ABI info
+[0.214s] -- Detecting C compiler ABI info - done
+[0.222s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.222s] -- Detecting C compile features
+[0.222s] -- Detecting C compile features - done
+[0.225s] -- Detecting CXX compiler ABI info
+[0.313s] -- Detecting CXX compiler ABI info - done
+[0.323s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.323s] -- Detecting CXX compile features
+[0.324s] -- Detecting CXX compile features - done
+[0.328s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.490s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.609s] -- Found controller_manager: 2.43.1 (/opt/ros/humble/share/controller_manager/cmake)
+[0.658s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.663s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.671s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.683s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.698s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.894s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.898s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.925s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[0.992s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.995s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[1.011s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.013s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[1.022s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[1.034s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.043s] -- Looking for pthread.h
+[1.126s] -- Looking for pthread.h - found
+[1.126s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.207s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.208s] -- Found Threads: TRUE  
+[1.309s] -- Found gazebo_ros: 3.7.0 (/opt/ros/humble/share/gazebo_ros/cmake)
+[1.321s] -- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") 
+[1.323s] -- Checking for module 'bullet>=2.82'
+[1.345s] --   Found bullet, version 3.05
+[1.485s] -- Found fcl: /usr/include (found suitable version "0.7.0", minimum required is "0.5.0") 
+[1.558s] -- Found assimp: /usr/include (found version "5.2.0") 
+[1.575s] -- Found DART: /usr/include (Required is at least version "6.6") found components: dart 
+[1.607s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.40.0") found components: thread system filesystem program_options regex iostreams date_time 
+[1.622s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") 
+[1.628s] -- Looking for ignition-math6 -- found version 6.15.1
+[1.634s] -- Searching for dependencies of ignition-math6
+[1.635s] -- Looking for OGRE...
+[1.635s] -- OGRE_PREFIX_WATCH changed.
+[1.643s] -- Checking for module 'OGRE'
+[1.661s] --   Found OGRE, version 1.9.0
+[1.736s] -- Found Ogre Ghadamon (1.9.0)
+[1.751s] -- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so
+[1.763s] -- Looking for OGRE_Paging...
+[1.769s] -- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so
+[1.769s] -- Looking for OGRE_Terrain...
+[1.773s] -- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so
+[1.773s] -- Looking for OGRE_Property...
+[1.778s] -- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so
+[1.778s] -- Looking for OGRE_RTShaderSystem...
+[1.783s] -- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so
+[1.783s] -- Looking for OGRE_Volume...
+[1.787s] -- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so
+[1.787s] -- Looking for OGRE_Overlay...
+[1.792s] -- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so
+[1.894s] -- Looking for ignition-math6 -- found version 6.15.1
+[1.896s] -- Looking for ignition-transport8 -- found version 8.2.1
+[1.896s] -- Searching for dependencies of ignition-transport8
+[1.921s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") 
+[1.934s] -- Config-file not installed for ZeroMQ -- checking for pkg-config
+[1.940s] -- Checking for module 'libzmq >= 4'
+[1.958s] --   Found libzmq , version 4.3.4
+[2.014s] -- Found ZeroMQ: TRUE (Required is at least version "4") 
+[2.019s] -- Checking for module 'uuid'
+[2.040s] --   Found uuid, version 2.37.2
+[2.083s] -- Found UUID: TRUE  
+[2.085s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[2.086s] -- Searching for dependencies of ignition-msgs5
+[2.107s] -- Looking for ignition-math6 -- found version 6.15.1
+[2.113s] -- Checking for module 'tinyxml2'
+[2.130s] --   Found tinyxml2, version 9.0.0
+[2.179s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[2.182s] -- Looking for ignition-common3 -- found version 3.14.0
+[2.182s] -- Searching for dependencies of ignition-common3
+[2.182s] -- Looking for dlfcn.h - found
+[2.183s] -- Looking for libdl - found
+[2.184s] -- Found DL: TRUE  
+[2.198s] -- Found tinyobjloader: /usr/lib/x86_64-linux-gnu/cmake/tinyobjloader/tinyobjloader-config.cmake (found version "2.0.0") 
+[2.198s] -- Searching for <ignition-common3> component [graphics]
+[2.200s] -- Looking for ignition-common3-graphics -- found version 3.14.0
+[2.201s] -- Searching for dependencies of ignition-common3-graphics
+[2.201s] -- Looking for ignition-math6 -- found version 6.15.1
+[2.204s] -- Looking for ignition-fuel_tools4 -- found version 4.4.0
+[2.204s] -- Searching for dependencies of ignition-fuel_tools4
+[2.326s] -- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.81.0")  
+[2.336s] -- Checking for module 'jsoncpp'
+[2.355s] --   Found jsoncpp, version 1.9.5
+[2.402s] -- Found JSONCPP: TRUE  
+[2.412s] -- Checking for module 'libzip'
+[2.440s] --   Found libzip, version 1.7.3
+[2.497s] -- Found ZIP: TRUE  
+[2.498s] -- Looking for ignition-common3 -- found version 3.14.0
+[2.499s] -- Looking for ignition-math6 -- found version 6.15.1
+[2.500s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[2.507s] -- Gazebo version: 11.10
+[2.507s] -- Checking for module 'tbb'
+[2.526s] --   Found tbb, version 2021.5.0
+[2.591s] -- Found gazebo_ros2_control: 0.4.10 (/opt/ros/humble/share/gazebo_ros2_control/cmake)
+[2.610s] -- Found gazebo_ros_pkgs: 3.7.0 (/opt/ros/humble/share/gazebo_ros_pkgs/cmake)
+[2.612s] -- Found gripper_controllers: 2.37.3 (/opt/ros/humble/share/gripper_controllers/cmake)
+[2.626s] -- Found parameter_traits: 0.3.9 (/opt/ros/humble/share/parameter_traits/cmake)
+[2.649s] -- Found ros_gz: 0.244.15 (/opt/ros/humble/share/ros_gz/cmake)
+[2.651s] -- Found ros_gz_bridge: 0.244.15 (/opt/ros/humble/share/ros_gz_bridge/cmake)
+[2.836s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") 
+[3.163s] -- Found ros_gz_sim: 0.244.15 (/opt/ros/humble/share/ros_gz_sim/cmake)
+[3.169s] -- Found ros_gz_image: 0.244.15 (/opt/ros/humble/share/ros_gz_image/cmake)
+[3.170s] -- Found ros2_control: 2.43.1 (/opt/ros/humble/share/ros2_control/cmake)
+[3.172s] -- Found ros2_controllers: 2.37.3 (/opt/ros/humble/share/ros2_controllers/cmake)
+[3.176s] -- Found xacro: 2.0.8 (/opt/ros/humble/share/xacro/cmake)
+[3.293s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[3.440s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[3.440s] -- Configured cppcheck include dirs: /home/pbs/ros2_ws/src/mycobot_ros2/mycobot_gazebo/include
+[3.440s] -- Configured cppcheck exclude dirs and/or files: 
+[3.448s] -- Added test 'flake8' to check Python code syntax and style conventions
+[3.465s] -- Added test 'lint_cmake' to check CMake code style
+[3.473s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[3.538s] -- Added test 'uncrustify' to check C / C++ code style
+[3.538s] -- Configured uncrustify additional arguments: 
+[3.546s] -- Added test 'xmllint' to check XML markup files
+[3.548s] -- Configuring done
+[3.597s] -- Generating done
+[3.600s] -- Build files have been written to: /home/pbs/ros2_ws/build/mycobot_gazebo
+[3.625s] Invoked command in '/home/pbs/ros2_ws/build/mycobot_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/pbs/ros2_ws/src/mycobot_ros2/mycobot_gazebo -DCMAKE_INSTALL_PREFIX=/home/pbs/ros2_ws/install/mycobot_gazebo
+[3.628s] Invoking command in '/home/pbs/ros2_ws/build/mycobot_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/pbs/ros2_ws/build/mycobot_gazebo -- -j12 -l12
+[3.700s] [ 50%] [32mBuilding CXX object CMakeFiles/example_joint_trajectory_publisher_cpp.dir/src/example_joint_trajectory_publisher.cpp.o[0m
+[3.703s] [ 50%] Built target ament_cmake_python_copy_mycobot_gazebo
+[3.945s] running egg_info
+[3.946s] creating mycobot_gazebo.egg-info
+[3.946s] writing mycobot_gazebo.egg-info/PKG-INFO
+[3.947s] writing dependency_links to mycobot_gazebo.egg-info/dependency_links.txt
+[3.947s] writing top-level names to mycobot_gazebo.egg-info/top_level.txt
+[3.947s] writing manifest file 'mycobot_gazebo.egg-info/SOURCES.txt'
+[3.950s] reading manifest file 'mycobot_gazebo.egg-info/SOURCES.txt'
+[3.950s] writing manifest file 'mycobot_gazebo.egg-info/SOURCES.txt'
+[4.008s] [ 50%] Built target ament_cmake_python_build_mycobot_gazebo_egg
+[7.724s] [100%] [32m[1mLinking CXX executable example_joint_trajectory_publisher_cpp[0m
+[8.133s] [100%] Built target example_joint_trajectory_publisher_cpp
+[8.147s] Invoked command in '/home/pbs/ros2_ws/build/mycobot_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/pbs/ros2_ws/build/mycobot_gazebo -- -j12 -l12
+[8.178s] Invoking command in '/home/pbs/ros2_ws/build/mycobot_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/pbs/ros2_ws/build/mycobot_gazebo
+[8.185s] -- Install configuration: ""
+[8.186s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/config
+[8.186s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/config/mycobot_280_controllers.yaml
+[8.186s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/config/excavator_controllers.yaml
+[8.186s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/config/ros_gz_bridge.yaml
+[8.186s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/launch
+[8.186s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/launch/mycobot_280_arduino_bringup_ros2_control_classic_gazebo.launch.py
+[8.186s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/launch/mycobot_280_arduino_bringup_classic_gazebo.launch.py
+[8.186s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/launch/mycobot_280_arduino_bringup_gazebo.launch.py
+[8.186s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/launch/mycobot_280_arduino_bringup_ros2_control_gazebo.launch.py
+[8.186s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/launch/mycobot_280_arduino_bringup_ros2_control_classic_gazebo.launch_241121_01.py
+[8.187s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/launch/mycobot_280_arduino_bringup_ros2_control_classic_gazebo.launch_origin.py
+[8.187s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models
+[8.187s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Board_01
+[8.187s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Board_01/model.sdf
+[8.187s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Board_01/model.config
+[8.187s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Board_01/materials
+[8.187s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Board_01/materials/textures
+[8.187s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Board_01/materials/textures/aws_Board_01.png
+[8.188s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Board_01/meshes
+[8.188s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Board_01/meshes/aws_Board_01_collision.DAE
+[8.188s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Board_01/meshes/aws_Board_01_visual.DAE
+[8.188s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_DeskPortraitD_04
+[8.188s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_DeskPortraitD_04/model.sdf
+[8.188s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_DeskPortraitD_04/model.config
+[8.188s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_DeskPortraitD_04/materials
+[8.189s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_DeskPortraitD_04/materials/textures
+[8.189s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_DeskPortraitD_04/materials/textures/DeskPortraitD_04.jpg
+[8.189s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_DeskPortraitD_04/materials/textures/aws_DeskPortraitD_02.png
+[8.192s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_DeskPortraitD_04/materials/textures/aws_DeskPortraitD_01.png
+[8.192s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_DeskPortraitD_04/meshes
+[8.192s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_DeskPortraitD_04/meshes/aws_DeskPortraitD_01_visual.DAE
+[8.193s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_DeskPortraitD_04/meshes/aws_DeskPortraitD_01_collision.DAE
+[8.193s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_HouseWallB_01
+[8.193s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_HouseWallB_01/model.sdf
+[8.193s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_HouseWallB_01/model.config
+[8.194s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_HouseWallB_01/materials
+[8.194s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_HouseWallB_01/materials/textures
+[8.194s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_HouseWallB_01/materials/textures/aws_HouseWallB_01.png
+[8.194s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_HouseWallB_01/meshes
+[8.194s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_HouseWallB_01/meshes/aws_HouseWallB_01_collision.DAE
+[8.194s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_HouseWallB_01/meshes/aws_HouseWallB_01_visual.DAE
+[8.194s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Wardrobe_01
+[8.194s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Wardrobe_01/model.sdf
+[8.195s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Wardrobe_01/model.config
+[8.195s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Wardrobe_01/materials
+[8.195s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Wardrobe_01/materials/textures
+[8.195s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Wardrobe_01/materials/textures/aws_Wardrobe_01.png
+[8.197s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Wardrobe_01/meshes
+[8.197s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Wardrobe_01/meshes/aws_Wardrobe_01_collision.DAE
+[8.197s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Wardrobe_01/meshes/aws_Wardrobe_01_visual.DAE
+[8.198s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_GroundB_01
+[8.198s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_GroundB_01/model.sdf
+[8.198s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_GroundB_01/model.config
+[8.198s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_GroundB_01/materials
+[8.198s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_GroundB_01/materials/textures
+[8.198s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_GroundB_01/materials/textures/aws_robomaker_warehouse_GroundB_01.png
+[8.201s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_GroundB_01/materials/textures/aws_robomaker_warehouse_GroundB_02.png
+[8.201s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_GroundB_01/meshes
+[8.201s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_GroundB_01/meshes/aws_robomaker_warehouse_GroundB_01_visual.DAE
+[8.201s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_GroundB_01/meshes/aws_robomaker_warehouse_GroundB_01_collision.DAE
+[8.201s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_TV_01
+[8.202s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_TV_01/model.sdf
+[8.202s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_TV_01/model.config
+[8.202s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_TV_01/materials
+[8.202s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_TV_01/materials/textures
+[8.202s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_TV_01/materials/textures/aws_TV_01.png
+[8.203s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_TV_01/meshes
+[8.203s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_TV_01/meshes/aws_TV_01_collision.DAE
+[8.203s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_TV_01/meshes/aws_TV_01_visual.DAE
+[8.203s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_TV_02
+[8.203s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_TV_02/model.sdf
+[8.203s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_TV_02/model.config
+[8.203s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_TV_02/materials
+[8.203s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_TV_02/materials/textures
+[8.203s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_TV_02/materials/textures/aws_TV_01.png
+[8.205s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_TV_02/meshes
+[8.205s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_TV_02/meshes/aws_TV_01_collision.DAE
+[8.205s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_TV_02/meshes/aws_TV_01_visual.DAE
+[8.205s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_Lamp_01
+[8.206s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_Lamp_01/model.sdf
+[8.206s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_Lamp_01/model.config
+[8.206s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_Lamp_01/materials
+[8.206s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_Lamp_01/materials/textures
+[8.206s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_Lamp_01/materials/textures/aws_robomaker_warehouse_Lamp_01.png
+[8.207s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_Lamp_01/meshes
+[8.207s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_Lamp_01/meshes/aws_robomaker_warehouse_Lamp_01_collision.DAE
+[8.207s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_Lamp_01/meshes/aws_robomaker_warehouse_Lamp_01_visual.DAE
+[8.207s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_SofaC_01
+[8.207s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_SofaC_01/model.sdf
+[8.207s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_SofaC_01/model.config
+[8.208s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_SofaC_01/materials
+[8.208s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_SofaC_01/materials/textures
+[8.208s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_SofaC_01/materials/textures/aws_SofaC_01.png
+[8.208s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_SofaC_01/meshes
+[8.208s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_SofaC_01/meshes/aws_SofaC_01_visual.DAE
+[8.208s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_SofaC_01/meshes/aws_SofaC_01_collision.DAE
+[8.209s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_FoldingDoor_02
+[8.209s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_FoldingDoor_02/model.sdf
+[8.209s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_FoldingDoor_02/model.config
+[8.209s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_FoldingDoor_02/materials
+[8.209s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_FoldingDoor_02/materials/textures
+[8.209s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_FoldingDoor_02/materials/textures/aws_FoldingDoor_02.png
+[8.210s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_FoldingDoor_02/meshes
+[8.210s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_FoldingDoor_02/meshes/aws_FoldingDoor_02_visual.DAE
+[8.210s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_FoldingDoor_02/meshes/aws_FoldingDoor_02_collision.DAE
+[8.210s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_FloorB_01
+[8.210s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_FloorB_01/model.sdf
+[8.210s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_FloorB_01/model.config
+[8.211s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_FloorB_01/materials
+[8.211s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_FloorB_01/materials/textures
+[8.211s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_FloorB_01/materials/textures/aws_FloorB_01.png
+[8.211s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_FloorB_01/meshes
+[8.211s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_FloorB_01/meshes/aws_FloorB_01_visual.DAE
+[8.212s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_FloorB_01/meshes/aws_FloorB_01_collision.DAE
+[8.212s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_DeskC_01
+[8.212s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_DeskC_01/model.sdf
+[8.212s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_DeskC_01/model.config
+[8.212s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_DeskC_01/materials
+[8.212s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_DeskC_01/materials/.DS_Store
+[8.213s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_DeskC_01/materials/textures
+[8.213s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_DeskC_01/materials/textures/aws_robomaker_warehouse_DeskC_04.png
+[8.213s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_DeskC_01/materials/textures/aws_robomaker_warehouse_DeskC_03.psd
+[8.214s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_DeskC_01/materials/textures/aws_robomaker_warehouse_DeskC_01.png
+[8.215s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_DeskC_01/materials/textures/aws_robomaker_warehouse_DeskC_02.png
+[8.215s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_DeskC_01/materials/textures/aws_robomaker_warehouse_DeskC_03.png
+[8.216s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_DeskC_01/meshes
+[8.216s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_DeskC_01/meshes/aws_robomaker_warehouse_DeskC_01_collision.DAE
+[8.216s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_DeskC_01/meshes/aws_robomaker_warehouse_DeskC_01_visual.DAE
+[8.216s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_SecurityCamera_01
+[8.216s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_SecurityCamera_01/model.sdf
+[8.217s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_SecurityCamera_01/model.config
+[8.217s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_SecurityCamera_01/materials
+[8.217s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_SecurityCamera_01/materials/textures
+[8.217s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_SecurityCamera_01/materials/textures/aws_SecurityCamera_01.png
+[8.217s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_SecurityCamera_01/meshes
+[8.217s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_SecurityCamera_01/meshes/aws_SecurityCamera_01_visual.DAE
+[8.218s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_SecurityCamera_01/meshes/aws_SecurityCamera_01_collision.DAE
+[8.218s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_SeasoningBox_01
+[8.218s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_SeasoningBox_01/model.sdf
+[8.218s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_SeasoningBox_01/model.config
+[8.218s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_SeasoningBox_01/materials
+[8.218s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_SeasoningBox_01/materials/textures
+[8.219s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_SeasoningBox_01/materials/textures/aws_SeasoningBox_01.png
+[8.219s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_SeasoningBox_01/meshes
+[8.219s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_SeasoningBox_01/meshes/aws_SeasoningBox_01_collision.DAE
+[8.219s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_SeasoningBox_01/meshes/aws_SeasoningBox_01_visual.DAE
+[8.223s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Rangehood_01
+[8.223s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Rangehood_01/model.sdf
+[8.224s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Rangehood_01/model.config
+[8.224s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Rangehood_01/materials
+[8.224s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Rangehood_01/materials/textures
+[8.224s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Rangehood_01/materials/textures/aws_Rangehood_01.png
+[8.224s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Rangehood_01/meshes
+[8.224s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Rangehood_01/meshes/aws_Rangehood_01_visual.DAE
+[8.224s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Rangehood_01/meshes/aws_Rangehood_01_collision.DAE
+[8.225s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_KitchenTable_01
+[8.225s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_KitchenTable_01/model.sdf
+[8.225s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_KitchenTable_01/model.config
+[8.225s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_KitchenTable_01/materials
+[8.226s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_KitchenTable_01/materials/textures
+[8.226s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_KitchenTable_01/materials/textures/aws_KitchenTable_01.png
+[8.226s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_KitchenTable_01/meshes
+[8.227s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_KitchenTable_01/meshes/aws_KitchenTable_01_collision.DAE
+[8.227s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_KitchenTable_01/meshes/aws_KitchenTable_01_visual.DAE
+[8.227s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Curtain_01
+[8.227s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Curtain_01/model.sdf
+[8.227s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Curtain_01/model.config
+[8.228s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Curtain_01/materials
+[8.228s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Curtain_01/materials/textures
+[8.228s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Curtain_01/materials/textures/aws_Curtain_01.png
+[8.228s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Curtain_01/meshes
+[8.228s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Curtain_01/meshes/aws_Curtain_01_collision.DAE
+[8.229s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Curtain_01/meshes/aws_Curtain_01_visual.DAE
+[8.229s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_DeskPortraitC_01
+[8.229s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_DeskPortraitC_01/model.sdf
+[8.229s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_DeskPortraitC_01/model.config
+[8.229s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_DeskPortraitC_01/materials
+[8.229s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_DeskPortraitC_01/materials/textures
+[8.230s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_DeskPortraitC_01/materials/textures/aws_DeskPortraitC_02.png
+[8.230s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_DeskPortraitC_01/materials/textures/DeskPortraitC_01.jpg
+[8.238s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_DeskPortraitC_01/materials/textures/aws_DeskPortraitC_01.png
+[8.238s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_DeskPortraitC_01/meshes
+[8.238s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_DeskPortraitC_01/meshes/aws_DeskPortraitC_01_visual.DAE
+[8.238s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_DeskPortraitC_01/meshes/aws_DeskPortraitC_01_collision.DAE
+[8.239s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_PortraitD_01
+[8.239s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_PortraitD_01/model.sdf
+[8.239s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_PortraitD_01/model.config
+[8.239s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_PortraitD_01/materials
+[8.239s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_PortraitD_01/materials/textures
+[8.240s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_PortraitD_01/materials/textures/aws_PortraitD_02.png
+[8.240s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_PortraitD_01/materials/textures/PortraitD_01.jpg
+[8.240s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_PortraitD_01/materials/textures/aws_PortraitD_01.png
+[8.241s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_PortraitD_01/meshes
+[8.241s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_PortraitD_01/meshes/aws_PortraitD_01_visual.DAE
+[8.241s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_PortraitD_01/meshes/aws_PortraitD_01_collision.DAE
+[8.241s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_BalconyTable_01
+[8.242s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_BalconyTable_01/model.sdf
+[8.242s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_BalconyTable_01/model.config
+[8.242s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_BalconyTable_01/materials
+[8.242s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_BalconyTable_01/materials/textures
+[8.242s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_BalconyTable_01/materials/textures/aws_BalconyTable_01.png
+[8.243s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_BalconyTable_01/meshes
+[8.243s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_BalconyTable_01/meshes/aws_BalconyTable_01_collision.DAE
+[8.243s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_BalconyTable_01/meshes/aws_BalconyTable_01_visual.DAE
+[8.243s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/sun
+[8.243s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/sun/model-1_4.sdf
+[8.243s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/sun/model-1_2.sdf
+[8.243s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/sun/model.sdf
+[8.244s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/sun/model-1_3.sdf
+[8.244s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/sun/model.config
+[8.244s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/mustard
+[8.244s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/mustard/model.sdf
+[8.244s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/mustard/model.config
+[8.244s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/mustard/materials
+[8.245s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/mustard/materials/textures
+[8.245s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/mustard/materials/textures/optimized_tsdf_texture_mapped_mesh.png
+[8.246s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/mustard/materials/scripts
+[8.246s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/mustard/materials/scripts/mustard.material
+[8.246s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/mustard/meshes
+[8.246s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/mustard/meshes/texture_map.png
+[8.249s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/mustard/meshes/mustard.dae
+[8.253s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_KitchenCabinet_01
+[8.253s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_KitchenCabinet_01/model.sdf
+[8.253s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_KitchenCabinet_01/model.config
+[8.253s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_KitchenCabinet_01/materials
+[8.253s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_KitchenCabinet_01/materials/textures
+[8.254s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_KitchenCabinet_01/materials/textures/aws_KitchenCabinet_01.png
+[8.254s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_KitchenCabinet_01/meshes
+[8.254s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_KitchenCabinet_01/meshes/aws_KitchenCabinet_01_visual.DAE
+[8.257s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_KitchenCabinet_01/meshes/aws_KitchenCabinet_01_collision.DAE
+[8.257s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_WallB_01
+[8.257s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_WallB_01/model.sdf
+[8.257s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_WallB_01/model.config
+[8.258s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_WallB_01/materials
+[8.258s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_WallB_01/materials/textures
+[8.258s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_WallB_01/materials/textures/aws_robomaker_warehouse_WallB_01.png
+[8.258s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_WallB_01/meshes
+[8.258s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_WallB_01/meshes/aws_robomaker_warehouse_WallB_01_collision.DAE
+[8.258s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_WallB_01/meshes/aws_robomaker_warehouse_WallB_01_visual.DAE
+[8.259s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_PortraitB_03
+[8.259s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_PortraitB_03/model.sdf
+[8.259s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_PortraitB_03/model.config
+[8.259s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_PortraitB_03/materials
+[8.259s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_PortraitB_03/materials/textures
+[8.259s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_PortraitB_03/materials/textures/aws_PortraitB_02.png
+[8.260s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_PortraitB_03/materials/textures/aws_PortraitB_01.png
+[8.260s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_PortraitB_03/materials/textures/PortraitB_03.jpg
+[8.260s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_PortraitB_03/meshes
+[8.260s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_PortraitB_03/meshes/aws_PortraitB_01_visual.DAE
+[8.260s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_PortraitB_03/meshes/aws_PortraitB_01_collision.DAE
+[8.260s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_LightC_01
+[8.261s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_LightC_01/model.sdf
+[8.261s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_LightC_01/model.config
+[8.261s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_LightC_01/materials
+[8.261s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_LightC_01/materials/textures
+[8.261s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_LightC_01/materials/textures/aws_LightC_01.png
+[8.262s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_LightC_01/meshes
+[8.262s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_LightC_01/meshes/aws_LightC_01_collision.DAE
+[8.262s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_LightC_01/meshes/aws_LightC_01_visual.DAE
+[8.262s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_PortraitE_02
+[8.262s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_PortraitE_02/model.sdf
+[8.262s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_PortraitE_02/model.config
+[8.262s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_PortraitE_02/materials
+[8.263s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_PortraitE_02/materials/textures
+[8.263s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_PortraitE_02/materials/textures/aws_PortraitE_02.png
+[8.264s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_PortraitE_02/materials/textures/aws_PortraitE_01.png
+[8.264s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_PortraitE_02/materials/textures/PortraitE_02.jpg
+[8.264s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_PortraitE_02/meshes
+[8.264s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_PortraitE_02/meshes/aws_PortraitE_01_collision.DAE
+[8.264s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_PortraitE_02/meshes/aws_PortraitE_01_visual.DAE
+[8.265s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/ground_plane
+[8.265s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/ground_plane/model-1_4.sdf
+[8.265s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/ground_plane/model-1_2.sdf
+[8.265s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/ground_plane/model.sdf
+[8.266s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/ground_plane/model-1_3.sdf
+[8.266s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/ground_plane/model.config
+[8.266s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_CoffeeTable_01
+[8.266s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_CoffeeTable_01/model.sdf
+[8.266s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_CoffeeTable_01/model.config
+[8.266s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_CoffeeTable_01/materials
+[8.266s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_CoffeeTable_01/materials/textures
+[8.267s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_CoffeeTable_01/materials/textures/aws_CoffeeTable_01.png
+[8.267s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_CoffeeTable_01/meshes
+[8.267s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_CoffeeTable_01/meshes/aws_CoffeeTable_01_collision.DAE
+[8.267s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_CoffeeTable_01/meshes/aws_CoffeeTable_01_visual.DAE
+[8.267s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/hello_mtc_with_perception_cylinder
+[8.267s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/hello_mtc_with_perception_cylinder/model.sdf
+[8.268s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/hello_mtc_with_perception_cylinder/model.config
+[8.268s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_ShelfD_01
+[8.268s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_ShelfD_01/model.sdf
+[8.268s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_ShelfD_01/model.config
+[8.268s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_ShelfD_01/materials
+[8.268s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_ShelfD_01/materials/textures
+[8.268s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_ShelfD_01/materials/textures/aws_robomaker_warehouse_ShelfD_02.png
+[8.269s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_ShelfD_01/materials/textures/aws_robomaker_warehouse_ShelfD_04.png
+[8.269s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_ShelfD_01/materials/textures/aws_robomaker_warehouse_ShelfD_01.png
+[8.269s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_ShelfD_01/materials/textures/aws_robomaker_warehouse_ShelfD_03.png
+[8.269s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_ShelfD_01/meshes
+[8.269s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_ShelfD_01/meshes/aws_robomaker_warehouse_ShelfD_01_visual.DAE
+[8.270s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_ShelfD_01/meshes/aws_robomaker_warehouse_ShelfD_01_collision.DAE
+[8.270s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_DeskPortraitD_01
+[8.270s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_DeskPortraitD_01/model.sdf
+[8.270s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_DeskPortraitD_01/model.config
+[8.270s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_DeskPortraitD_01/materials
+[8.270s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_DeskPortraitD_01/materials/textures
+[8.271s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_DeskPortraitD_01/materials/textures/DeskPortraitD_01.jpg
+[8.271s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_DeskPortraitD_01/materials/textures/aws_DeskPortraitD_02.png
+[8.273s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_DeskPortraitD_01/materials/textures/aws_DeskPortraitD_01.png
+[8.274s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_DeskPortraitD_01/meshes
+[8.274s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_DeskPortraitD_01/meshes/aws_DeskPortraitD_01_visual.DAE
+[8.274s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_DeskPortraitD_01/meshes/aws_DeskPortraitD_01_collision.DAE
+[8.274s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/cheezit_big_original
+[8.274s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/cheezit_big_original/model.sdf
+[8.274s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/cheezit_big_original/model.config
+[8.275s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/cheezit_big_original/meshes
+[8.275s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/cheezit_big_original/meshes/cheezit_big_original.dae
+[8.275s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/cheezit_big_original/meshes/cheez_tex_0.jpg
+[8.281s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_ShelfF_01
+[8.281s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_ShelfF_01/model.sdf
+[8.281s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_ShelfF_01/model.config
+[8.281s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_ShelfF_01/materials
+[8.281s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_ShelfF_01/materials/textures
+[8.281s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_ShelfF_01/materials/textures/aws_robomaker_warehouse_ShelfF_01.png
+[8.282s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_ShelfF_01/materials/textures/aws_robomaker_warehouse_ShelfF_02.png
+[8.282s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_ShelfF_01/materials/textures/aws_robomaker_warehouse_ShelfF_03.png
+[8.282s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_ShelfF_01/meshes
+[8.282s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_ShelfF_01/meshes/aws_robomaker_warehouse_ShelfF_01_visual.DAE
+[8.283s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_ShelfF_01/meshes/aws_robomaker_warehouse_ShelfF_01_collision.DAE
+[8.283s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Tableware_01
+[8.283s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Tableware_01/model.sdf
+[8.283s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Tableware_01/model.config
+[8.284s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Tableware_01/materials
+[8.284s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Tableware_01/materials/textures
+[8.284s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Tableware_01/materials/textures/aws_Tableware_01.png
+[8.284s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Tableware_01/meshes
+[8.284s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Tableware_01/meshes/aws_Tableware_01_collision.DAE
+[8.284s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Tableware_01/meshes/aws_Tableware_01_visual.DAE
+[8.285s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_DeskPortraitA_02
+[8.286s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_DeskPortraitA_02/model.sdf
+[8.286s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_DeskPortraitA_02/model.config
+[8.286s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_DeskPortraitA_02/materials
+[8.286s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_DeskPortraitA_02/materials/textures
+[8.286s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_DeskPortraitA_02/materials/textures/aws_DeskPortraitA_02.png
+[8.287s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_DeskPortraitA_02/materials/textures/aws_DeskPortraitA_01.png
+[8.287s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_DeskPortraitA_02/materials/textures/DeskPortraitA_02.jpg
+[8.289s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_DeskPortraitA_02/meshes
+[8.289s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_DeskPortraitA_02/meshes/aws_DeskPortraitA_01_visual.DAE
+[8.290s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_DeskPortraitA_02/meshes/aws_DeskPortraitA_01_collision.DAE
+[8.290s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_DeskPortraitC_02
+[8.290s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_DeskPortraitC_02/model.sdf
+[8.290s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_DeskPortraitC_02/model.config
+[8.290s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_DeskPortraitC_02/materials
+[8.290s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_DeskPortraitC_02/materials/textures
+[8.291s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_DeskPortraitC_02/materials/textures/aws_DeskPortraitC_02.png
+[8.292s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_DeskPortraitC_02/materials/textures/DeskPortraitC_02.jpg
+[8.292s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_DeskPortraitC_02/materials/textures/aws_DeskPortraitC_01.png
+[8.292s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_DeskPortraitC_02/meshes
+[8.293s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_DeskPortraitC_02/meshes/aws_DeskPortraitC_01_visual.DAE
+[8.293s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_DeskPortraitC_02/meshes/aws_DeskPortraitC_01_collision.DAE
+[8.293s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_DeskPortraitD_03
+[8.293s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_DeskPortraitD_03/model.sdf
+[8.293s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_DeskPortraitD_03/model.config
+[8.293s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_DeskPortraitD_03/materials
+[8.294s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_DeskPortraitD_03/materials/textures
+[8.294s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_DeskPortraitD_03/materials/textures/DeskPortraitD_03.jpg
+[8.294s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_DeskPortraitD_03/materials/textures/aws_DeskPortraitD_02.png
+[8.296s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_DeskPortraitD_03/materials/textures/aws_DeskPortraitD_01.png
+[8.296s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_DeskPortraitD_03/meshes
+[8.297s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_DeskPortraitD_03/meshes/aws_DeskPortraitD_01_visual.DAE
+[8.297s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_DeskPortraitD_03/meshes/aws_DeskPortraitD_01_collision.DAE
+[8.297s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_KitchenUtensils_01
+[8.297s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_KitchenUtensils_01/model.sdf
+[8.297s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_KitchenUtensils_01/model.config
+[8.297s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_KitchenUtensils_01/materials
+[8.298s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_KitchenUtensils_01/materials/textures
+[8.298s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_KitchenUtensils_01/materials/textures/aws_KitchenUtensils_01.png
+[8.298s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_KitchenUtensils_01/meshes
+[8.298s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_KitchenUtensils_01/meshes/aws_KitchenUtensils_01_collision.DAE
+[8.298s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_KitchenUtensils_01/meshes/aws_KitchenUtensils_01_visual.DAE
+[8.300s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_SofaB_01
+[8.300s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_SofaB_01/model.sdf
+[8.300s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_SofaB_01/model.config
+[8.301s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_SofaB_01/materials
+[8.301s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_SofaB_01/materials/textures
+[8.301s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_SofaB_01/materials/textures/aws_SofaB_01.png
+[8.301s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_SofaB_01/meshes
+[8.301s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_SofaB_01/meshes/aws_SofaB_01_visual.DAE
+[8.301s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_SofaB_01/meshes/aws_SofaB_01_collision.DAE
+[8.302s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_RoomWall_01
+[8.302s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_RoomWall_01/model.sdf
+[8.302s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_RoomWall_01/model.config
+[8.302s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_RoomWall_01/materials
+[8.302s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_RoomWall_01/materials/textures
+[8.302s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_RoomWall_01/materials/textures/aws_RoomWall_01.png
+[8.306s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_RoomWall_01/meshes
+[8.306s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_RoomWall_01/meshes/aws_RoomWall_01_collision.DAE
+[8.306s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_RoomWall_01/meshes/aws_RoomWall_01_visual.DAE
+[8.306s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_Bucket_01
+[8.306s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_Bucket_01/model.sdf
+[8.307s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_Bucket_01/model.config
+[8.307s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_Bucket_01/.DS_Store
+[8.307s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_Bucket_01/materials
+[8.307s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_Bucket_01/materials/.DS_Store
+[8.307s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_Bucket_01/materials/textures
+[8.308s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_Bucket_01/materials/textures/aws_robomaker_warehouse_Bucket_01.png
+[8.308s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_Bucket_01/meshes
+[8.308s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_Bucket_01/meshes/aws_robomaker_warehouse_Bucket_01_visual.DAE
+[8.308s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_Bucket_01/meshes/aws_robomaker_warehouse_Bucket_01_collision.DAE
+[8.308s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_ShoeRack_01
+[8.308s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_ShoeRack_01/model.sdf
+[8.309s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_ShoeRack_01/model.config
+[8.309s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_ShoeRack_01/materials
+[8.309s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_ShoeRack_01/materials/textures
+[8.309s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_ShoeRack_01/materials/textures/aws_ShoeRack_01.png
+[8.309s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_ShoeRack_01/meshes
+[8.309s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_ShoeRack_01/meshes/aws_ShoeRack_01_visual.DAE
+[8.310s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_ShoeRack_01/meshes/aws_ShoeRack_01_collision.DAE
+[8.310s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_ChairD_01
+[8.310s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_ChairD_01/model.sdf
+[8.310s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_ChairD_01/model.config
+[8.310s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_ChairD_01/materials
+[8.310s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_ChairD_01/materials/textures
+[8.311s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_ChairD_01/materials/textures/aws_ChairD_01.png
+[8.311s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_ChairD_01/meshes
+[8.311s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_ChairD_01/meshes/aws_ChairD_01_visual.DAE
+[8.311s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_ChairD_01/meshes/aws_ChairD_01_collision.DAE
+[8.312s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Carpet_01
+[8.312s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Carpet_01/model.sdf
+[8.312s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Carpet_01/model.config
+[8.312s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Carpet_01/materials
+[8.312s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Carpet_01/materials/textures
+[8.312s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Carpet_01/materials/textures/aws_Carpet_01.png
+[8.319s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Carpet_01/meshes
+[8.319s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Carpet_01/meshes/aws_Carpet_01_visual.DAE
+[8.319s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Carpet_01/meshes/aws_Carpet_01_collision.DAE
+[8.320s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/hello_mtc_with_perception_table
+[8.320s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/hello_mtc_with_perception_table/model.sdf
+[8.320s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/hello_mtc_with_perception_table/model.config
+[8.320s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_FoldingDoor_01
+[8.320s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_FoldingDoor_01/model.sdf
+[8.321s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_FoldingDoor_01/model.config
+[8.321s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_FoldingDoor_01/materials
+[8.321s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_FoldingDoor_01/materials/textures
+[8.321s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_FoldingDoor_01/materials/textures/aws_FoldingDoor_01.png
+[8.321s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_FoldingDoor_01/meshes
+[8.321s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_FoldingDoor_01/meshes/aws_FoldingDoor_01_collision.DAE
+[8.321s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_FoldingDoor_01/meshes/aws_FoldingDoor_01_visual.DAE
+[8.323s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Tablet_01
+[8.323s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Tablet_01/model.sdf
+[8.323s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Tablet_01/model.config
+[8.323s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Tablet_01/.DS_Store
+[8.323s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Tablet_01/materials
+[8.324s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Tablet_01/materials/.DS_Store
+[8.324s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Tablet_01/materials/textures
+[8.324s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Tablet_01/materials/textures/aws_Tablet_01_nologo.png
+[8.324s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Tablet_01/meshes
+[8.324s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Tablet_01/meshes/aws_Tablet_01_visual.DAE
+[8.325s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Tablet_01/meshes/aws_Tablet_01_collision.DAE
+[8.325s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_PortraitA_02
+[8.325s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_PortraitA_02/model.sdf
+[8.325s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_PortraitA_02/model.config
+[8.325s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_PortraitA_02/materials
+[8.325s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_PortraitA_02/materials/textures
+[8.326s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_PortraitA_02/materials/textures/aws_PortraitA_02.png
+[8.326s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_PortraitA_02/materials/textures/PortraitA_02.jpg
+[8.326s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_PortraitA_02/materials/textures/aws_PortraitA_01.png
+[8.327s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_PortraitA_02/meshes
+[8.327s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_PortraitA_02/meshes/aws_PortraitA_01_visual.DAE
+[8.327s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_PortraitA_02/meshes/aws_PortraitA_01_collision.DAE
+[8.327s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_DeskPortraitB_01
+[8.327s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_DeskPortraitB_01/model.sdf
+[8.327s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_DeskPortraitB_01/model.config
+[8.327s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_DeskPortraitB_01/materials
+[8.328s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_DeskPortraitB_01/materials/textures
+[8.328s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_DeskPortraitB_01/materials/textures/aws_DeskPortraitB_02.png
+[8.329s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_DeskPortraitB_01/materials/textures/DeskPortraitB_01.jpg
+[8.330s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_DeskPortraitB_01/materials/textures/aws_DeskPortraitB_01.png
+[8.330s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_DeskPortraitB_01/meshes
+[8.330s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_DeskPortraitB_01/meshes/aws_DeskPortraitB_01_collision.DAE
+[8.330s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_DeskPortraitB_01/meshes/aws_DeskPortraitB_01_visual.DAE
+[8.330s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/cardboard_box
+[8.330s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/cardboard_box/model.sdf
+[8.331s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/cardboard_box/model.config
+[8.331s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/cardboard_box/materials
+[8.331s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/cardboard_box/materials/textures
+[8.331s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/cardboard_box/materials/textures/cardboard_box.png
+[8.331s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/cardboard_box/meshes
+[8.331s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/cardboard_box/meshes/cardboard_box.dae
+[8.332s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/cardboard_box/meshes/cardboard_box.png
+[8.332s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_RoomCeiling_01
+[8.332s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_RoomCeiling_01/model.sdf
+[8.332s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_RoomCeiling_01/model.config
+[8.332s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_RoomCeiling_01/materials
+[8.333s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_RoomCeiling_01/materials/textures
+[8.333s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_RoomCeiling_01/materials/textures/aws_RoomCeiling_01.png
+[8.333s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_RoomCeiling_01/meshes
+[8.333s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_RoomCeiling_01/meshes/aws_RoomCeiling_01_visual.DAE
+[8.333s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_RoomCeiling_01/meshes/aws_RoomCeiling_01_collision.DAE
+[8.334s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Dumbbell_01
+[8.334s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Dumbbell_01/model.sdf
+[8.334s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Dumbbell_01/model.config
+[8.334s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Dumbbell_01/materials
+[8.334s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Dumbbell_01/materials/textures
+[8.334s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Dumbbell_01/materials/textures/aws_Dumbbell_01.png
+[8.335s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Dumbbell_01/meshes
+[8.335s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Dumbbell_01/meshes/aws_Dumbbell_01_collision.DAE
+[8.335s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Dumbbell_01/meshes/aws_Dumbbell_01_visual.DAE
+[8.335s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Ball_01
+[8.335s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Ball_01/model.sdf
+[8.335s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Ball_01/model.config
+[8.335s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Ball_01/materials
+[8.336s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Ball_01/materials/textures
+[8.336s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Ball_01/materials/textures/aws_Ball_01.png
+[8.336s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Ball_01/meshes
+[8.336s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Ball_01/meshes/aws_Ball_01_visual.DAE
+[8.336s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Ball_01/meshes/aws_Ball_01_collision.DAE
+[8.337s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Refrigerator_01
+[8.337s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Refrigerator_01/model.sdf
+[8.337s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Refrigerator_01/model.config
+[8.337s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Refrigerator_01/materials
+[8.337s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Refrigerator_01/materials/textures
+[8.337s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Refrigerator_01/materials/textures/aws_Refrigerator_02.png
+[8.338s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Refrigerator_01/materials/textures/aws_Refrigerator_01.png
+[8.338s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Refrigerator_01/meshes
+[8.338s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Refrigerator_01/meshes/aws_Refrigerator_01_collision.DAE
+[8.338s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Refrigerator_01/meshes/aws_Refrigerator_01.DAE
+[8.338s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Refrigerator_01/meshes/aws_Refrigerator_01_visual.DAE
+[8.338s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_DeskPortraitA_01
+[8.339s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_DeskPortraitA_01/model.sdf
+[8.339s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_DeskPortraitA_01/model.config
+[8.339s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_DeskPortraitA_01/materials
+[8.339s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_DeskPortraitA_01/materials/textures
+[8.339s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_DeskPortraitA_01/materials/textures/aws_DeskPortraitA_02.png
+[8.339s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_DeskPortraitA_01/materials/textures/aws_DeskPortraitA_01.png
+[8.340s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_DeskPortraitA_01/materials/textures/DeskPortraitA_01.jpg
+[8.340s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_DeskPortraitA_01/meshes
+[8.340s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_DeskPortraitA_01/meshes/aws_DeskPortraitA_01_visual.DAE
+[8.340s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_DeskPortraitA_01/meshes/aws_DeskPortraitA_01_collision.DAE
+[8.341s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_TrashCanC_01
+[8.341s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_TrashCanC_01/model.sdf
+[8.341s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_TrashCanC_01/model.config
+[8.341s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_TrashCanC_01/materials
+[8.341s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_TrashCanC_01/materials/textures
+[8.342s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_TrashCanC_01/materials/textures/aws_robomaker_warehouse_TrashCanC_01.png
+[8.342s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_TrashCanC_01/meshes
+[8.342s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_TrashCanC_01/meshes/aws_robomaker_warehouse_TrashCanC_01_collision.DAE
+[8.342s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_TrashCanC_01/meshes/aws_robomaker_warehouse_TrashCanC_01_visual.DAE
+[8.342s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Pillow_01
+[8.343s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Pillow_01/model.sdf
+[8.343s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Pillow_01/model.config
+[8.343s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Pillow_01/materials
+[8.343s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Pillow_01/materials/textures
+[8.343s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Pillow_01/materials/textures/aws_Pillow_01.png
+[8.345s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Pillow_01/meshes
+[8.345s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Pillow_01/meshes/aws_Pillow_01_collision.DAE
+[8.345s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Pillow_01/meshes/aws_Pillow_01_visual.DAE
+[8.346s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/coke_can
+[8.346s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/coke_can/model-1_4.sdf
+[8.346s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/coke_can/model-1_2.sdf
+[8.347s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/coke_can/model.sdf
+[8.347s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/coke_can/model-1_3.sdf
+[8.347s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/coke_can/model.config
+[8.347s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/coke_can/materials
+[8.347s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/coke_can/materials/textures
+[8.347s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/coke_can/materials/textures/coke_can.png
+[8.348s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/coke_can/meshes
+[8.349s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/coke_can/meshes/coke_can.dae
+[8.349s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_DeskPortraitB_02
+[8.350s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_DeskPortraitB_02/model.sdf
+[8.350s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_DeskPortraitB_02/model.config
+[8.350s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_DeskPortraitB_02/materials
+[8.350s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_DeskPortraitB_02/materials/textures
+[8.350s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_DeskPortraitB_02/materials/textures/aws_DeskPortraitB_02.png
+[8.351s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_DeskPortraitB_02/materials/textures/aws_DeskPortraitB_01.png
+[8.352s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_DeskPortraitB_02/materials/textures/DeskPortraitB_02.jpg
+[8.360s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_DeskPortraitB_02/meshes
+[8.361s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_DeskPortraitB_02/meshes/aws_DeskPortraitB_01_collision.DAE
+[8.361s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_DeskPortraitB_02/meshes/aws_DeskPortraitB_01_visual.DAE
+[8.361s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_ClutteringC_01
+[8.361s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_ClutteringC_01/model.sdf
+[8.361s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_ClutteringC_01/model.config
+[8.361s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_ClutteringC_01/materials
+[8.362s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_ClutteringC_01/materials/textures
+[8.362s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_ClutteringC_01/materials/textures/aws_robomaker_warehouse_ClutteringC_02.png
+[8.362s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_ClutteringC_01/materials/textures/aws_robomaker_warehouse_ClutteringC_01.png
+[8.362s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_ClutteringC_01/meshes
+[8.362s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_ClutteringC_01/meshes/aws_robomaker_warehouse_ClutteringC_01_collision.DAE
+[8.362s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_ClutteringC_01/meshes/aws_robomaker_warehouse_ClutteringC_01_visual.DAE
+[8.363s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_RoofB_01
+[8.363s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_RoofB_01/model.sdf
+[8.363s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_RoofB_01/model.config
+[8.363s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_RoofB_01/materials
+[8.363s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_RoofB_01/materials/textures
+[8.363s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_RoofB_01/materials/textures/aws_robomaker_warehouse_RoofB_01.png
+[8.364s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_RoofB_01/meshes
+[8.364s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_RoofB_01/meshes/aws_robomaker_warehouse_RoofB_01_collision.DAE
+[8.364s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_RoofB_01/meshes/aws_robomaker_warehouse_RoofB_01_visual.DAE
+[8.364s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Quilt_01
+[8.364s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Quilt_01/model.sdf
+[8.364s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Quilt_01/model.config
+[8.365s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Quilt_01/materials
+[8.365s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Quilt_01/materials/textures
+[8.365s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Quilt_01/materials/textures/aws_Quilt_01.png
+[8.365s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Quilt_01/meshes
+[8.366s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Quilt_01/meshes/aws_Quilt_01_collision.DAE
+[8.366s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Quilt_01/meshes/aws_Quilt_01_visual.DAE
+[8.366s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_PortraitC_01
+[8.366s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_PortraitC_01/model.sdf
+[8.367s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_PortraitC_01/model.config
+[8.367s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_PortraitC_01/materials
+[8.367s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_PortraitC_01/materials/textures
+[8.367s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_PortraitC_01/materials/textures/aws_PortraitC_01.png
+[8.367s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_PortraitC_01/materials/textures/aws_PortraitC_02.png
+[8.368s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_PortraitC_01/materials/textures/PortraitC_01.jpg
+[8.368s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_PortraitC_01/meshes
+[8.369s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_PortraitC_01/meshes/aws_PortraitC_01_collision.DAE
+[8.369s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_PortraitC_01/meshes/aws_PortraitC_01_visual.DAE
+[8.369s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_DeskPortraitD_02
+[8.369s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_DeskPortraitD_02/model.sdf
+[8.369s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_DeskPortraitD_02/model.config
+[8.369s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_DeskPortraitD_02/materials
+[8.370s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_DeskPortraitD_02/materials/textures
+[8.370s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_DeskPortraitD_02/materials/textures/DeskPortraitD_02.jpg
+[8.370s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_DeskPortraitD_02/materials/textures/aws_DeskPortraitD_02.png
+[8.372s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_DeskPortraitD_02/materials/textures/aws_DeskPortraitD_01.png
+[8.372s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_DeskPortraitD_02/meshes
+[8.373s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_DeskPortraitD_02/meshes/aws_DeskPortraitD_01_visual.DAE
+[8.373s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_DeskPortraitD_02/meshes/aws_DeskPortraitD_01_collision.DAE
+[8.373s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Bed_01
+[8.373s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Bed_01/model.sdf
+[8.373s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Bed_01/model.config
+[8.373s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Bed_01/materials
+[8.374s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Bed_01/materials/textures
+[8.374s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Bed_01/materials/textures/aws_BedC_01.png
+[8.375s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Bed_01/materials/textures/aws_BedA_01.png
+[8.375s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Bed_01/materials/textures/aws_Bed_01.png
+[8.376s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Bed_01/materials/textures/aws_BedB_01.png
+[8.378s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Bed_01/meshes
+[8.378s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Bed_01/meshes/aws_Bed_01_visual.DAE
+[8.380s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Bed_01/meshes/aws_Bed_01_collision.DAE
+[8.380s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_PortraitE_01
+[8.380s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_PortraitE_01/model.sdf
+[8.380s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_PortraitE_01/model.config
+[8.381s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_PortraitE_01/materials
+[8.381s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_PortraitE_01/materials/textures
+[8.381s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_PortraitE_01/materials/textures/PortraitE_01.jpg
+[8.381s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_PortraitE_01/materials/textures/aws_PortraitE_02.png
+[8.382s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_PortraitE_01/materials/textures/aws_PortraitE_01.png
+[8.383s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_PortraitE_01/meshes
+[8.383s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_PortraitE_01/meshes/aws_PortraitE_01_collision.DAE
+[8.383s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_PortraitE_01/meshes/aws_PortraitE_01_visual.DAE
+[8.383s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_AirconditionerB_01
+[8.383s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_AirconditionerB_01/model.sdf
+[8.384s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_AirconditionerB_01/model.config
+[8.384s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_AirconditionerB_01/materials
+[8.384s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_AirconditionerB_01/materials/textures
+[8.384s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_AirconditionerB_01/materials/textures/aws_AirconditionerB_01.png
+[8.384s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_AirconditionerB_01/meshes
+[8.384s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_AirconditionerB_01/meshes/aws_AirconditionerB_01_collision.DAE
+[8.385s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_AirconditionerB_01/meshes/aws_AirconditionerB_01_visual.DAE
+[8.385s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_PortraitD_02
+[8.385s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_PortraitD_02/model.sdf
+[8.385s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_PortraitD_02/model.config
+[8.385s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_PortraitD_02/materials
+[8.385s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_PortraitD_02/materials/textures
+[8.386s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_PortraitD_02/materials/textures/aws_PortraitD_02.png
+[8.386s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_PortraitD_02/materials/textures/PortraitD_02.jpg
+[8.386s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_PortraitD_02/materials/textures/aws_PortraitD_01.png
+[8.386s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_PortraitD_02/meshes
+[8.386s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_PortraitD_02/meshes/aws_PortraitD_01_visual.DAE
+[8.387s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_PortraitD_02/meshes/aws_PortraitD_01_collision.DAE
+[8.387s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_PortraitA_01
+[8.387s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_PortraitA_01/model.sdf
+[8.387s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_PortraitA_01/model.config
+[8.387s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_PortraitA_01/materials
+[8.387s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_PortraitA_01/materials/textures
+[8.388s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_PortraitA_01/materials/textures/PortraitA_01.jpg
+[8.388s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_PortraitA_01/materials/textures/aws_PortraitA_02.png
+[8.388s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_PortraitA_01/materials/textures/aws_PortraitA_01.png
+[8.388s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_PortraitA_01/meshes
+[8.388s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_PortraitA_01/meshes/aws_PortraitA_01_visual.DAE
+[8.389s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_PortraitA_01/meshes/aws_PortraitA_01_collision.DAE
+[8.389s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_ChairA_01
+[8.389s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_ChairA_01/model.sdf
+[8.389s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_ChairA_01/model.config
+[8.389s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_ChairA_01/materials
+[8.389s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_ChairA_01/materials/textures
+[8.390s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_ChairA_01/materials/textures/aws_ChairA_01.png
+[8.390s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_ChairA_01/meshes
+[8.390s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_ChairA_01/meshes/aws_ChairA_01_visual.DAE
+[8.391s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_ChairA_01/meshes/aws_ChairA_01_collision.DAE
+[8.391s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_ClutteringA_01
+[8.391s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_ClutteringA_01/model.sdf
+[8.391s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_ClutteringA_01/model.config
+[8.391s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_ClutteringA_01/.DS_Store
+[8.392s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_ClutteringA_01/materials
+[8.392s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_ClutteringA_01/materials/.DS_Store
+[8.392s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_ClutteringA_01/materials/textures
+[8.392s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_ClutteringA_01/materials/textures/aws_robomaker_warehouse_ClutteringA_02.png
+[8.392s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_ClutteringA_01/materials/textures/.DS_Store
+[8.392s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_ClutteringA_01/materials/textures/aws_robomaker_warehouse_ClutteringA_01.png
+[8.393s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_ClutteringA_01/materials/textures/aws_robomaker_warehouse_ClutteringA_03.png
+[8.393s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_ClutteringA_01/meshes
+[8.393s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_ClutteringA_01/meshes/aws_robomaker_warehouse_ClutteringA_01_visual.DAE
+[8.393s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_ClutteringA_01/meshes/aws_robomaker_warehouse_ClutteringA_01_collision.DAE
+[8.393s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Trash_01
+[8.394s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Trash_01/model.sdf
+[8.394s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Trash_01/model.config
+[8.394s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Trash_01/materials
+[8.394s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Trash_01/materials/textures
+[8.394s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Trash_01/materials/textures/aws_Trash_01.png
+[8.394s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Trash_01/meshes
+[8.395s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Trash_01/meshes/aws_Trash_01_visual.DAE
+[8.395s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Trash_01/meshes/aws_Trash_01_collision.DAE
+[8.395s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Vase_01
+[8.395s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Vase_01/model.sdf
+[8.395s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Vase_01/model.config
+[8.395s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Vase_01/materials
+[8.396s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Vase_01/materials/textures
+[8.396s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Vase_01/materials/textures/aws_Vase_01.png
+[8.396s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Vase_01/meshes
+[8.396s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Vase_01/meshes/aws_Vase_01_visual.DAE
+[8.396s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Vase_01/meshes/aws_Vase_01_collision.DAE
+[8.396s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_NightStand_01
+[8.397s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_NightStand_01/model.sdf
+[8.397s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_NightStand_01/model.config
+[8.397s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_NightStand_01/materials
+[8.397s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_NightStand_01/materials/textures
+[8.397s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_NightStand_01/materials/textures/aws_NightStand_01.png
+[8.397s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_NightStand_01/meshes
+[8.398s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_NightStand_01/meshes/aws_NightStand_01_visual.DAE
+[8.398s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_NightStand_01/meshes/aws_NightStand_01_collision.DAE
+[8.398s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_ReadingDesk_01
+[8.398s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_ReadingDesk_01/model.sdf
+[8.398s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_ReadingDesk_01/model.config
+[8.398s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_ReadingDesk_01/materials
+[8.398s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_ReadingDesk_01/materials/textures
+[8.399s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_ReadingDesk_01/materials/textures/aws_ReadingDesk_01.png
+[8.399s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_ReadingDesk_01/meshes
+[8.399s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_ReadingDesk_01/meshes/aws_ReadingDesk_01_collision.DAE
+[8.399s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_ReadingDesk_01/meshes/aws_ReadingDesk_01_visual.DAE
+[8.399s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Handle_01
+[8.400s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Handle_01/model.sdf
+[8.400s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Handle_01/model.config
+[8.400s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Handle_01/materials
+[8.400s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Handle_01/materials/textures
+[8.400s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Handle_01/materials/textures/aws_Handle_01.png
+[8.401s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Handle_01/meshes
+[8.401s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Handle_01/meshes/aws_Handle_01_collision.DAE
+[8.401s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Handle_01/meshes/aws_Handle_01_visual.DAE
+[8.402s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_FitnessEquipment_01
+[8.402s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_FitnessEquipment_01/model.sdf
+[8.402s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_FitnessEquipment_01/model.config
+[8.402s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_FitnessEquipment_01/materials
+[8.402s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_FitnessEquipment_01/materials/textures
+[8.402s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_FitnessEquipment_01/materials/textures/aws_FitnessEquipment_01.png
+[8.403s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_FitnessEquipment_01/meshes
+[8.403s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_FitnessEquipment_01/meshes/aws_FitnessEquipment_01_visual.DAE
+[8.403s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_FitnessEquipment_01/meshes/aws_FitnessEquipment_01_collision.DAE
+[8.403s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_PortraitB_02
+[8.403s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_PortraitB_02/model.sdf
+[8.403s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_PortraitB_02/model.config
+[8.404s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_PortraitB_02/materials
+[8.404s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_PortraitB_02/materials/textures
+[8.404s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_PortraitB_02/materials/textures/PortraitB_02.jpg
+[8.407s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_PortraitB_02/materials/textures/aws_PortraitB_02.png
+[8.407s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_PortraitB_02/materials/textures/aws_PortraitB_01.png
+[8.407s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_PortraitB_02/meshes
+[8.407s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_PortraitB_02/meshes/aws_PortraitB_01_visual.DAE
+[8.408s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_PortraitB_02/meshes/aws_PortraitB_01_collision.DAE
+[8.408s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_RoomWindow_01
+[8.408s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_RoomWindow_01/model.sdf
+[8.408s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_RoomWindow_01/model.config
+[8.408s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_RoomWindow_01/materials
+[8.408s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_RoomWindow_01/materials/textures
+[8.408s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_RoomWindow_01/materials/textures/aws_RoomWindow_01.png
+[8.408s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_RoomWindow_01/meshes
+[8.408s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_RoomWindow_01/meshes/aws_RoomWindow_01_visual.DAE
+[8.409s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_RoomWindow_01/meshes/aws_RoomWindow_01_collision.DAE
+[8.409s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_PalletJackB_01
+[8.409s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_PalletJackB_01/model.sdf
+[8.409s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_PalletJackB_01/model.config
+[8.409s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_PalletJackB_01/.DS_Store
+[8.409s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_PalletJackB_01/materials
+[8.409s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_PalletJackB_01/materials/.DS_Store
+[8.409s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_PalletJackB_01/materials/textures
+[8.410s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_PalletJackB_01/materials/textures/aws_robomaker_warehouse_PalletJackB_02.png
+[8.410s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_PalletJackB_01/materials/textures/aws_robomaker_warehouse_PalletJackB_01.png
+[8.411s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_PalletJackB_01/meshes
+[8.411s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_PalletJackB_01/meshes/aws_robomaker_warehouse_PalletJackB_01_collision.DAE
+[8.411s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_PalletJackB_01/meshes/aws_robomaker_warehouse_PalletJackB_01_visual.DAE
+[8.412s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Door_01
+[8.412s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Door_01/model.sdf
+[8.412s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Door_01/model.config
+[8.412s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Door_01/materials
+[8.412s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Door_01/materials/textures
+[8.412s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Door_01/materials/textures/aws_Door_01.png
+[8.413s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Door_01/meshes
+[8.414s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Door_01/meshes/aws_Door_01_collision.DAE
+[8.414s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Door_01/meshes/aws_Door_01_visual.DAE
+[8.414s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_ClutteringD_01
+[8.414s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_ClutteringD_01/model.sdf
+[8.414s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_ClutteringD_01/model.config
+[8.414s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_ClutteringD_01/materials
+[8.415s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_ClutteringD_01/materials/textures
+[8.415s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_ClutteringD_01/materials/textures/aws_robomaker_warehouse_ClutteringD_01.png
+[8.415s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_ClutteringD_01/materials/textures/aws_robomaker_warehouse_ClutteringD_02.png
+[8.415s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_ClutteringD_01/meshes
+[8.415s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_ClutteringD_01/meshes/aws_robomaker_warehouse_ClutteringD_01_visual.DAE
+[8.416s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_ClutteringD_01/meshes/aws_robomaker_warehouse_ClutteringD_01_collision.DAE
+[8.416s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Chandelier_01
+[8.416s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Chandelier_01/model.sdf
+[8.416s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Chandelier_01/model.config
+[8.416s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Chandelier_01/materials
+[8.416s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Chandelier_01/materials/textures
+[8.416s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Chandelier_01/materials/textures/aws_Chandelier_01.png
+[8.417s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Chandelier_01/meshes
+[8.417s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Chandelier_01/meshes/aws_Chandelier_01_visual.DAE
+[8.418s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Chandelier_01/meshes/aws_Chandelier_01_collision.DAE
+[8.418s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Chandelier_01/meshes/aws_Chandelier_01.DAE
+[8.419s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_ShelfE_01
+[8.419s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_ShelfE_01/model.sdf
+[8.419s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_ShelfE_01/model.config
+[8.419s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_ShelfE_01/.DS_Store
+[8.419s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_ShelfE_01/materials
+[8.419s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_ShelfE_01/materials/.DS_Store
+[8.419s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_ShelfE_01/materials/textures
+[8.419s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_ShelfE_01/materials/textures/aws_robomaker_warehouse_ShelfE_03.png
+[8.420s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_ShelfE_01/materials/textures/aws_robomaker_warehouse_ShelfE_02.png
+[8.420s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_ShelfE_01/materials/textures/aws_robomaker_warehouse_ShelfE_01.png
+[8.420s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_ShelfE_01/materials/textures/aws_robomaker_warehouse_ShelfE_04.png
+[8.421s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_ShelfE_01/meshes
+[8.421s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_ShelfE_01/meshes/aws_robomaker_warehouse_ShelfE_01_visual.DAE
+[8.421s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_warehouse_ShelfE_01/meshes/aws_robomaker_warehouse_ShelfE_01_collision.DAE
+[8.421s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_TVCabinet_01
+[8.422s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_TVCabinet_01/model.sdf
+[8.422s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_TVCabinet_01/model.config
+[8.422s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_TVCabinet_01/materials
+[8.422s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_TVCabinet_01/materials/textures
+[8.422s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_TVCabinet_01/materials/textures/aws_TVCabinet_01.png
+[8.423s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_TVCabinet_01/meshes
+[8.423s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_TVCabinet_01/meshes/aws_TVCabinet_01_visual.DAE
+[8.423s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_TVCabinet_01/meshes/aws_TVCabinet_01_collision.DAE
+[8.423s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_CookingBench_01
+[8.423s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_CookingBench_01/model.sdf
+[8.423s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_CookingBench_01/model.config
+[8.424s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_CookingBench_01/materials
+[8.424s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_CookingBench_01/materials/textures
+[8.424s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_CookingBench_01/materials/textures/aws_CookingBench_01.png
+[8.424s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_CookingBench_01/meshes
+[8.424s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_CookingBench_01/meshes/aws_CookingBench_01.DAE
+[8.425s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_CookingBench_01/meshes/aws_CookingBench_01_visual.DAE
+[8.425s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_CookingBench_01/meshes/aws_CookingBench_01_collision.DAE
+[8.425s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_AirconditionerA_01
+[8.425s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_AirconditionerA_01/model.sdf
+[8.426s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_AirconditionerA_01/model.config
+[8.426s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_AirconditionerA_01/materials
+[8.426s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_AirconditionerA_01/materials/textures
+[8.426s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_AirconditionerA_01/materials/textures/aws_AirconditionerA_01.png
+[8.427s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_AirconditionerA_01/meshes
+[8.427s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_AirconditionerA_01/meshes/aws_AirconditionerA_01_visual.DAE
+[8.427s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_AirconditionerA_01/meshes/aws_AirconditionerA_01_collision.DAE
+[8.428s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Sofa_01
+[8.428s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Sofa_01/model.sdf
+[8.428s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Sofa_01/model.config
+[8.428s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Sofa_01/materials
+[8.428s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Sofa_01/materials/textures
+[8.428s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Sofa_01/materials/textures/aws_Sofa_01.png
+[8.428s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Sofa_01/meshes
+[8.428s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Sofa_01/meshes/aws_Sofa_01.DAE
+[8.432s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Sofa_01/meshes/aws_Sofa_01_collision.DAE
+[8.433s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_Sofa_01/meshes/aws_Sofa_01_visual.DAE
+[8.434s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_PortraitB_01
+[8.434s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_PortraitB_01/model.sdf
+[8.434s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_PortraitB_01/model.config
+[8.434s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_PortraitB_01/materials
+[8.434s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_PortraitB_01/materials/textures
+[8.435s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_PortraitB_01/materials/textures/PortraitB_01.jpg
+[8.436s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_PortraitB_01/materials/textures/aws_PortraitB_02.png
+[8.437s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_PortraitB_01/materials/textures/aws_PortraitB_01.png
+[8.437s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_PortraitB_01/meshes
+[8.437s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_PortraitB_01/meshes/aws_PortraitB_01_visual.DAE
+[8.437s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/models/aws_robomaker_residential_PortraitB_01/meshes/aws_PortraitB_01_collision.DAE
+[8.437s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/scripts
+[8.437s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/scripts/test_set_joint_position_publisher.py
+[8.437s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/scripts/example_joint_trajectory_publisher.py
+[8.437s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/scripts/test_set_joint_trajectory_publisher.py
+[8.438s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/src
+[8.438s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/src/example_joint_trajectory_publisher.cpp
+[8.438s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/urdf
+[8.438s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/urdf/mycobot_280_gazebo.urdf.xacro
+[8.438s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/urdf/ros2_control
+[8.438s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/urdf/ros2_control/gazebo
+[8.438s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/urdf/ros2_control/gazebo/mycobot_280_ros2_control.xacro
+[8.438s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/urdf/ros2_control/gazebo/mycobot_280_gazebo.xacro
+[8.438s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/urdf/ros2_control/gazebo/mycobot_280.urdf.xacro
+[8.439s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/urdf/ros2_control/classic_gazebo
+[8.439s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/urdf/ros2_control/classic_gazebo/mycobot_280_classic_gazebo.xacro
+[8.439s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/urdf/ros2_control/classic_gazebo/mycobot_280_ros2_control.xacro
+[8.439s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/urdf/ros2_control/classic_gazebo/mycobot_280.urdf.xacro
+[8.439s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/urdf/ros2_control/classic_gazebo/meshes
+[8.439s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/urdf/ros2_control/classic_gazebo/meshes/arm_link_1.STL
+[8.439s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/urdf/ros2_control/classic_gazebo/meshes/BL_wheel_link.STL
+[8.440s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/urdf/ros2_control/classic_gazebo/meshes/terracore_link_2.STL
+[8.440s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/urdf/ros2_control/classic_gazebo/meshes/FR_wheel_link.STL
+[8.440s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/urdf/ros2_control/classic_gazebo/meshes/arm_link_2.STL
+[8.440s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/urdf/ros2_control/classic_gazebo/meshes/terracore_link_1.STL
+[8.440s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/urdf/ros2_control/classic_gazebo/meshes/FL_wheel_link.STL
+[8.441s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/urdf/ros2_control/classic_gazebo/meshes/BR_wheel_link.STL
+[8.441s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/urdf/ros2_control/classic_gazebo/meshes/base_link.STL
+[8.441s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/urdf/ros2_control/classic_gazebo/meshes/upper_structure_link.STL
+[8.441s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/urdf/ros2_control/classic_gazebo/meshes/terracore_link_3.STL
+[8.441s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/urdf/ros2_control/classic_gazebo/excavator_03.SLDASM.urdf
+[8.442s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/urdf/mycobot_280_classic_gazebo.urdf.xacro
+[8.442s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/worlds
+[8.442s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/worlds/house.world
+[8.442s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/worlds/cylinder.world
+[8.442s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/worlds/empty_classic.world
+[8.442s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/worlds/empty.world
+[8.442s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/worlds/house_classic.world
+[8.442s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/worlds/small_warehouse_classic.world
+[8.443s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/worlds/cylinder_perception.world
+[8.443s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/include
+[8.443s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/include/README.md
+[8.443s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/lib/mycobot_gazebo/example_joint_trajectory_publisher_cpp
+[8.445s] -- Set runtime path of "/home/pbs/ros2_ws/install/mycobot_gazebo/lib/mycobot_gazebo/example_joint_trajectory_publisher_cpp" to ""
+[8.446s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/environment/pythonpath.sh
+[8.446s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/environment/pythonpath.dsv
+[8.446s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/local/lib/python3.10/dist-packages/mycobot_gazebo-0.0.0-py3.10.egg-info
+[8.446s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/local/lib/python3.10/dist-packages/mycobot_gazebo-0.0.0-py3.10.egg-info/SOURCES.txt
+[8.446s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/local/lib/python3.10/dist-packages/mycobot_gazebo-0.0.0-py3.10.egg-info/PKG-INFO
+[8.446s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/local/lib/python3.10/dist-packages/mycobot_gazebo-0.0.0-py3.10.egg-info/top_level.txt
+[8.446s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/local/lib/python3.10/dist-packages/mycobot_gazebo-0.0.0-py3.10.egg-info/dependency_links.txt
+[8.446s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/local/lib/python3.10/dist-packages/mycobot_gazebo
+[8.446s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/local/lib/python3.10/dist-packages/mycobot_gazebo/__init__.py
+[8.480s] Listing '/home/pbs/ros2_ws/install/mycobot_gazebo/local/lib/python3.10/dist-packages/mycobot_gazebo'...
+[8.481s] Compiling '/home/pbs/ros2_ws/install/mycobot_gazebo/local/lib/python3.10/dist-packages/mycobot_gazebo/__init__.py'...
+[8.485s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/lib/mycobot_gazebo/example_joint_trajectory_publisher.py
+[8.485s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/lib/mycobot_gazebo/test_set_joint_position_publisher.py
+[8.485s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/lib/mycobot_gazebo/test_set_joint_trajectory_publisher.py
+[8.486s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/ament_index/resource_index/package_run_dependencies/mycobot_gazebo
+[8.486s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/ament_index/resource_index/parent_prefix_path/mycobot_gazebo
+[8.486s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/environment/ament_prefix_path.sh
+[8.486s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/environment/ament_prefix_path.dsv
+[8.486s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/environment/path.sh
+[8.487s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/environment/path.dsv
+[8.487s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/local_setup.bash
+[8.487s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/local_setup.sh
+[8.487s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/local_setup.zsh
+[8.487s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/local_setup.dsv
+[8.488s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/package.dsv
+[8.488s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/ament_index/resource_index/packages/mycobot_gazebo
+[8.488s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/cmake/mycobot_gazeboConfig.cmake
+[8.488s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/cmake/mycobot_gazeboConfig-version.cmake
+[8.489s] -- Installing: /home/pbs/ros2_ws/install/mycobot_gazebo/share/mycobot_gazebo/package.xml
+[8.492s] Invoked command in '/home/pbs/ros2_ws/build/mycobot_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/pbs/ros2_ws/build/mycobot_gazebo
