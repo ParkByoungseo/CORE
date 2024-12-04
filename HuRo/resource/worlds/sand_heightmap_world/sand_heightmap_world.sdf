@@ -1,0 +1,76 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <world name="sand_heightmap_world">
+
+
+    <!-- 물리 엔진 설정 -->
+    <physics name="default_physics" type="dart">
+      <max_step_size>0.001</max_step_size>
+      <real_time_factor>1</real_time_factor>
+      <real_time_update_rate>1000</real_time_update_rate>
+      <gravity>0 0 -9.8</gravity>
+      <plugin
+        filename="libignition-gazebo6-physics-system.so"
+        name="Physics">
+        <engine>dart</engine>
+        <max_step_size>0.001</max_step_size>
+        <gravity>0 0 -9.8</gravity>
+      </plugin>
+    </physics>
+
+
+    <!-- 기본 지면 추가 -->
+    <include>
+      <uri>file:///home/yerim/Yonsei_ws/src/HuRo/resource/worlds/ground_plane/model.sdf</uri>
+      <pose>0 0 0 0 0 0</pose>
+    </include>
+
+    <!-- 모래 높이 맵 모델 정의 -->
+    <model name="sand_heightmap">
+      <static>true</static>
+      <link name="link">
+        <collision name="ground">
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>file:///home/yerim/Yonsei_ws/src/HuRo/resource/worlds/sand_heightmap_world/meshes/heightmap.dae</uri>
+            </mesh>
+          </geometry>
+        </collision>
+
+        <visual name="ground_sand">
+          <cast_shadows>true</cast_shadows>
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>file:///home/yerim/Yonsei_ws/src/HuRo/resource/worlds/sand_heightmap_world/meshes/heightmap.dae</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>file:///home/yerim/Yonsei_ws/src/HuRo/resource/worlds/sand_heightmap_world/materials/textures/</uri>
+              <name>soil_sand_0045_01</name>
+            </script>
+            <lighting>true</lighting>
+            <diffuse>0.9 0.8 0.7 1</diffuse> <!-- 밝은 모래 텍스처 -->
+            <specular>0.2 0.2 0.2 1</specular> <!-- 약간의 반사광 -->
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <!-- 환경 설정 -->
+    <gravity>0 0 -9.8</gravity>
+    <atmosphere type="adiabatic" />
+
+    <!-- 조명 -->
+    <light name="sun" type="directional">
+      <cast_shadows>true</cast_shadows>
+      <pose>0 0 100 0 0 0</pose>
+      <diffuse>1 1 1 1</diffuse>
+      <specular>0.1 0.1 0.1 1</specular>
+      <direction>-0.5 0.5 -1</direction>
+    </light>
+
+  </world>
+</sdf>

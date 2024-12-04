@@ -1,0 +1,69 @@
+---
+controller_manager:
+  ros__parameters:
+    update_rate: 1000
+    robot_description: "robot_description"
+    robot_hardware:
+      hardware_plugin: "gz_ros2_control/GazeboSimSystem"
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
+      publish_rate: 50
+      state_topic: "/joint_states"
+
+manual_effort_controller:
+  ros__parameters:
+    type: effort_controllers/JointGroupEffortController
+    joints:
+      - FR_wheel_joint
+      - FL_wheel_joint
+      - BR_wheel_joint
+      - BL_wheel_joint
+      - upper_structure_joint
+      - arm_joint_1
+      - arm_joint_2
+    command_topic: "/manual_cmd_effort"
+    command_interfaces:
+      - effort
+
+auto_effort_controller:
+  ros__parameters:
+    type: effort_controllers/JointGroupEffortController
+    joints:
+      - terracore_joint_1
+      - terracore_joint_2
+      - terracore_joint_3
+    command_topic: "/auto_cmd_effort"
+    command_interfaces:
+      - effort
+
+joint_limits:
+  FR_wheel_joint:
+    effort: 100.0
+    velocity: 5.0
+  FL_wheel_joint:
+    effort: 100.0
+    velocity: 5.0
+  BR_wheel_joint:
+    effort: 100.0
+    velocity: 5.0
+  BL_wheel_joint:
+    effort: 100.0
+    velocity: 5.0
+  upper_structure_joint:
+    effort: 50.0
+    velocity: 1.5
+  arm_joint_1:
+    effort: 150.0
+    velocity: 2.0
+  arm_joint_2:
+    effort: 150.0
+    velocity: 2.0
+  terracore_joint_1:
+    effort: 200.0
+    velocity: 1.0
+  terracore_joint_2:
+    effort: 200.0
+    velocity: 1.0
+  terracore_joint_3:
+    effort: 200.0
+    velocity: 1.0

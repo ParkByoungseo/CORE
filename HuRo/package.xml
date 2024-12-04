@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>HuRo</name>
+  <version>0.0.1</version>
+  <description>Package for the HuRo project</description>
+  <maintainer email="yerim@todo.todo">yerim</maintainer>
+  <license>Apache 2.0</license>
+
+  <!-- 빌드에 필요한 의존성 -->
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <build_depend>rclcpp</build_depend>
+  <build_depend>rclpy</build_depend>
+  <build_depend>sensor_msgs</build_depend>
+  <build_depend>geometry_msgs</build_depend>
+  <build_depend>gazebo_ros</build_depend>
+  <build_depend>ros_gz_bridge</build_depend>
+  <build_depend>joint_state_publisher</build_depend>
+  <build_depend>robot_state_publisher</build_depend>
+  <build_depend>ament_python</build_depend>
+  <build_depend>controller_interface</build_depend>
+  <build_depend>hardware_interface</build_depend>
+  <build_depend>transmission_interface</build_depend>
+  <exec_depend>ament_python</exec_depend>
+
+  <!-- 실행에 필요한 의존성 -->
+  <exec_depend>rclcpp</exec_depend>
+  <depend>std_msgs</depend>
+  <exec_depend>sensor_msgs</exec_depend>
+  <exec_depend>geometry_msgs</exec_depend>
+  <exec_depend>ros_gz_bridge</exec_depend>
+  <depend>ros_gz_sim</depend>
+  <exec_depend>joint_state_publisher</exec_depend>
+  <exec_depend>joint_state_publisher_gui</exec_depend>
+  <exec_depend>robot_state_publisher</exec_depend>
+  <exec_depend>controller_manager</exec_depend>
+  <exec_depend>ros2_control</exec_depend>
+  <depend>gz_ros2_control</depend>
+
+
+
+  <!-- 테스트 의존성 -->
+  <test_depend>ament_copyright</test_depend>
+  <test_depend>ament_flake8</test_depend>
+  <test_depend>ament_pep257</test_depend>
+  <test_depend>python3-pytest</test_depend>
+  
+  <!-- (변환노드) 실행에 필요한 의존성 추가 -->
+  <exec_depend>rclpy</exec_depend>
+  <exec_depend>sensor_msgs</exec_depend>
+  <exec_depend>ros_gz_interfaces</exec_depend>
+  
+  <!-- 플러그인 로드과정 자동화 -->
+<!--  <depend>libignition-gazebo6-dev</depend> -->
+  <depend>ros-humble-ros2-control</depend>
+<!--  <depend>ros-humble-ign-gazebo</depend> -->
+
+  <!-- 빌드 타입 -->
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
